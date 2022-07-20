@@ -1,4 +1,4 @@
-# <p align="center">uniapp template</p>
+# <p align="center">[uniapp template](https://github.com/zhanbai/uniapp-template)</p>
 
 ## 关于
 
