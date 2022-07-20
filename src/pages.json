@@ -28,14 +28,14 @@
 		"list": [
 			{
 				"pagePath": "pages/home/index",
-				"iconPath": "static/image/home.svg",
-				"selectedIconPath": "static/image/home_active.svg",
+				"iconPath": "static/image/tabbar/home.svg",
+				"selectedIconPath": "static/image/tabbar/home_active.svg",
 				"text": "首页"
 			},
 			{
 				"pagePath": "pages/my/index",
-				"iconPath": "static/image/my.svg",
-				"selectedIconPath": "static/image/my_active.svg",
+				"iconPath": "static/image/tabbar/my.svg",
+				"selectedIconPath": "static/image/tabbar/my_active.svg",
 				"text": "我的"
 			}
 		]
