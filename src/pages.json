@@ -39,5 +39,18 @@
 				"text": "我的"
 			}
 		]
-	}
+	},
+	"subPackages": [
+		{
+			"root": "subpkg",
+			"pages": [
+				{
+					"path": "swiper/index",
+					"style": {
+						"navigationBarTitleText": "轮播图"
+					}
+				}
+			]
+		}
+	]
 }

@@ -1,19 +1,23 @@
 <template>
   <view class="main">
-    <block v-for="(item, i) in demoList" :key="i">
-      <navigator :url="item.path" open-type="navigate"
-        ><button type="default">{{ item.name }}</button></navigator
-      >
-    </block>
+    <!-- 轮播图背景 -->
+    <view class="swiper-bg"></view>
+    <!-- 轮播图列表 -->
+    <swiper indicator-dots autoplay circular indicator-color="#ffffff99" indicator-active-color="#fa2c19">
+      <block v-for="(item, i) in swiperList" :key="i">
+        <swiper-item><image class="image" :src="item.image" mode="scaleToFill" /></swiper-item>
+      </block>
+    </swiper>
   </view>
 </template>
 
 <script>
-import demoList from "./mock";
+import swiperList from "./mock";
+
 export default {
   components: {},
   data: () => ({
-    demoList: demoList,
+    swiperList: swiperList,
   }),
   computed: {},
   methods: {},
@@ -41,11 +45,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-page {
-  padding: $uni-spacing-col-lg;
+// 页面
+.main {
+  padding: $uni-spacing-row-base;
 }
 
-navigator {
-  margin-top: $uni-spacing-col-base;
+// 轮播图背景
+.swiper-bg {
+  position: absolute;
+  background-image: linear-gradient(0deg, #f1503b, #c82519 50%);
+  width: 150%;
+  height: 240rpx;
+  top: 0;
+  left: -25%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+}
+
+// 轮播图列表
+swiper {
+  overflow: hidden;
+  border-radius: $uni-border-radius-lg;
 }
 </style>
