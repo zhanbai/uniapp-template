@@ -1,9 +1,9 @@
 let swiperList = [
   {
-    image: require("@/subpkg/static/swiper/01.jpg"),
+    image: require("@/subpkg/static/image/swiper/01.jpg"),
   },
   {
-    image: require("@/subpkg/static/swiper/02.jpg"),
+    image: require("@/subpkg/static/image/swiper/02.jpg"),
   },
 ];
 
