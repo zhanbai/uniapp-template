@@ -47,7 +47,7 @@ export default {
 <style lang="scss" scoped>
 // 页面
 .main {
-  padding: $uni-spacing-row-base;
+  padding: 24rpx;
 }
 
 // 轮播图背景
@@ -65,6 +65,6 @@ export default {
 // 轮播图列表
 swiper {
   overflow: hidden;
-  border-radius: $uni-border-radius-lg;
+  border-radius: 16rpx;
 }
 </style>

@@ -176,7 +176,7 @@ export default {
   background-image: linear-gradient(90deg, #fab3b3, #ffbcb3 73%, #ffcaba);
   border-radius: 50rpx;
   color: #fff;
-  font-size: $uni-font-size-lg;
+  font-size: 32rpx;
   text-align: center;
 }
 

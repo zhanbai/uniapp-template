@@ -1,5 +1,6 @@
 <template>
   <view class="main">
+    <!-- 搜索栏 -->
     <view class="search-bar">
       <view class="left-btn"
         ><image class="image" src="@/subpkg/static/image/search-bar/cate_btn.png" mode="scaleToFill"
@@ -10,8 +11,9 @@
         /></view>
         <view class="text">唐诗三百首</view>
       </view>
-      <view class="right-btn">登录</view>
+      <view class="right-btn" @click="goto('/subpkg/login/index')">登录</view>
     </view>
+    <!-- 填充内容 -->
     <view class="filling"
       >兰叶春葳蕤，桂华秋皎洁。 欣欣此生意，自尔为佳节。 谁知林栖者，闻风坐相悦。 草木有本心，何求美人折？
     </view>
@@ -23,7 +25,12 @@ export default {
   components: {},
   data: () => ({}),
   computed: {},
-  methods: {},
+  methods: {
+    // 跳转登录页面
+    goto(url) {
+      uni.$common.goto(url);
+    },
+  },
   watch: {},
 
   // 页面周期函数--监听页面加载
@@ -54,7 +61,7 @@ export default {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 $uni-spacing-row-base;
+  padding: 0 24rpx;
   width: 710rpx;
   height: 88rpx;
   background: #c82519;
@@ -84,8 +91,8 @@ export default {
 
     // 搜索关键词
     .text {
-      color: $uni-text-color-placeholder;
-      font-size: $uni-font-size-sm;
+      color: #00000066;
+      font-size: 24rpx;
     }
   }
 
