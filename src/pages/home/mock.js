@@ -11,6 +11,10 @@ let demoList = [
     name: "轮播图示例",
     path: "/subpkg/swiper/index",
   },
+  {
+    name: "金刚区示例",
+    path: "/subpkg/nav-grid/index",
+  },
 ];
 
 export default demoList;

@@ -61,6 +61,12 @@
           "style": {
             "navigationBarTitleText": "轮播图"
           }
+        },
+        {
+          "path": "nav-grid/index",
+          "style": {
+            "navigationBarTitleText": "金刚区"
+          }
         }
       ]
     }
