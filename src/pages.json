@@ -1,62 +1,68 @@
 {
-	"pages": [
-		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/home/index",
-			"style": {
-				"navigationBarTitleText": "首页"
-			}
-		},
-		{
-			"path": "pages/my/index",
-			"style": {
-				"navigationBarTitleText": "我的"
-			}
-		}
-	],
-	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uniapp",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
-	},
-	"tabBar": {
-		"color": "#999",
-		"selectedColor": "#333",
-		"borderStyle": "black",
-		"backgroundColor": "#ffffff",
-		"list": [
-			{
-				"pagePath": "pages/home/index",
-				"iconPath": "static/image/tabbar/home.svg",
-				"selectedIconPath": "static/image/tabbar/home_active.svg",
-				"text": "首页"
-			},
-			{
-				"pagePath": "pages/my/index",
-				"iconPath": "static/image/tabbar/my.svg",
-				"selectedIconPath": "static/image/tabbar/my_active.svg",
-				"text": "我的"
-			}
-		]
-	},
-	"subPackages": [
-		{
-			"root": "subpkg",
-			"pages": [
-				{
-					"path": "swiper/index",
-					"style": {
-						"navigationBarTitleText": "轮播图"
-					}
-				},
-				{
-					"path": "search-bar/index",
-					"style": {
-						"navigationBarTitleText": "搜索栏"
-					}
-				}
-			]
-		}
-	]
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/home/index",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "我的"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uniapp",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#333",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/home/index",
+        "iconPath": "static/image/tabbar/home.svg",
+        "selectedIconPath": "static/image/tabbar/home_active.svg",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/my/index",
+        "iconPath": "static/image/tabbar/my.svg",
+        "selectedIconPath": "static/image/tabbar/my_active.svg",
+        "text": "我的"
+      }
+    ]
+  },
+  "subPackages": [
+    {
+      "root": "subpkg",
+      "pages": [
+        {
+          "path": "search-bar/index",
+          "style": {
+            "navigationBarTitleText": "搜索栏"
+          }
+        },
+        {
+          "path": "login/index",
+          "style": {
+            "navigationBarTitleText": "登录注册"
+          }
+        },
+        {
+          "path": "swiper/index",
+          "style": {
+            "navigationBarTitleText": "轮播图"
+          }
+        }
+      ]
+    }
+  ]
 }

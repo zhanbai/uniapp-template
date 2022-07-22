@@ -1,5 +1,6 @@
 import Vue from "vue";
 import App from "./App";
+import common from "./static/js/common";
 import Request from "luch-request";
 
 const http = new Request();
@@ -54,6 +55,7 @@ uni.$showMsg = function (title = "数据加载失败！", duration = 1500) {
 };
 
 uni.$http = http;
+uni.$common = common;
 Vue.config.productionTip = false;
 
 App.mpType = "app";
