@@ -39,7 +39,7 @@ http.interceptors.response.use(
     uni.hideLoading();
     return response;
   },
-  (config) => {
+  (response) => {
     return Promise.reject(response);
   }
 );
