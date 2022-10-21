@@ -44,11 +44,7 @@ http.interceptors.response.use(
       // 未认证，跳转登录页
       uni.navigateTo({ url: "/subpkg/login/index" });
     } else if (response.data.code !== 200) {
-      uni.showToast({
-        title: response.data.msg,
-        duration: 2000,
-        icon: "none",
-      });
+      uni.$common.showMsg(response.data.msg);
       return Promise.reject(response);
     } else {
       return response.data;
@@ -56,11 +52,7 @@ http.interceptors.response.use(
     return response;
   },
   (response) => {
-    uni.showToast({
-      title: "服务器错误",
-      duration: 2000,
-      icon: "none",
-    });
+    uni.$common.showMsg("服务器错误");
     return Promise.reject(response);
   }
 );
